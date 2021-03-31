@@ -1,0 +1,24 @@
+Visitor- Behavior Pattern ( hay Double Dispatch)
+
+Single Dispatch:
+- Cac phuong thuc cung ten nhung khac nhau ve tham so ( tinh da hinh). 
+=>Single Dispatch: 1 phuong thuc duoc goi dua tren: {Ten phuong thuc, Kieu doi tuong goi no} 
+
+Double Dispatch:
+- 1 phuong thuc se duoc goi dua tren 3 yeu to: {ten cua phuong thuc, kieu cua ca doi tuong goi, kieu cua tham so truyen vao}
+- thay cho instanceof
+
+
+- xem 1 method nhu la 1 structual method ( k lien quan gi den oop). VD: tham so truyen vao la object cua class B( object can test la class A, g/s test method m). Trong m co su dung cac state cua B, hoac goi method cua B de tra ve 1 gtri nao do. 
+EX: int k1= b.methodofB();
+    int k2= b.getProperty();
+=> co the xem k1, k2 nhu cac input value cua method, va sd cac structual testing de giai bai toan va tim ra k1, k2; sau do tu k1,k2 => sinh ra value de cau hinh cho constructor cua object B.
+=> giai quyet duoc bai toan cai tien generator cho object lam tham so. 
+
+- xem cac method nhu 1 method doc lap. Neu method co sd cac property, method cua object lam tham so, thi xem no nhu 1 bien. Sd thuat toan GA de bao phu
+
+Needed Work: 
+1. viet them 1 class thu 3 trong chuoi Triangle-> Scale -> OtherClass ( third class).
+=> Test Class
+2. tang size of population, ...
+=> Xem so test case duoc coverage. 

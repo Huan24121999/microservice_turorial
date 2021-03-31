@@ -1,0 +1,33 @@
+- Main elements: Service Registry, Gateway and other Services
+1. Service Registry
+- Luu thong tin ve service: so luong deployment, version, status of deployment...
+- Service duoc dinh danh boi NAME, => de dang goi lan nhau khi IP dong
+
+2. Service
+
+- Thanh toan, tai khoan, thong bao, xac thuc , cau hinh...
+=> Moi service hoat dong doc lap
+
+3. Gateway- Zuul
+
+3.1 Gateway:
+	Team server( noi bo cac service):service A co the goi service B bang ten cua service B
+	Server- Browser: khong the goi truc tiep boi ten cua service
+- 1 service co the co nhieu instance( nhieu deployment); moi instance lai sd 1 port khac nhau
+=> Gateway sinh ra de phan tan cac request den cac instance phu hop.
+
+- Gateway= entry point. Duoc dung de handle cac request bang cach dinh tuyen chung den cac service tuong ung. Cung co the dung de xac thuc, giam sat hoac cac cong viec khac
+
+3.2 Zuul
+
+- Gateway: la lop trung gian nam giua browser va service. 
+- Eureka server dung de dat ten cho tung service thay vi dung dia chi IP cua tung service. 1 service co the co nhieu instance va chay o nhieu port khac nhau. => Zuul co tac dung:
+	+ Nhu la 1 proxy
+	+ Map giua 1 prefix path va 1 instance ( team-service). Sd Eureka server de dinh tuyen cac service duoc request.
+	+ Giup can bang tai giua cac instance cua 1 service. 
+	+ Filter request, them xac thuc,....
+
+=> Bo khung cua microservice gom co : 
+	+ service Discovery ( Erueka server)
+	+ 2 Service ( Member and Team
+	+ Gateway: Zuul
