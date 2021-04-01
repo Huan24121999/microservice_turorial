@@ -1,0 +1,34 @@
+PUT- PROGRAM UNDER TEST
+PSO -> sinh test case thong qua 1 and chi 1 fitness function ( branch weights)
+=> De xuat nay co 2 diem yeu:
+	+ function: branch weight duoc tao toan bo mot cach thu cong
+	+ Cac chuong trinh duoc test khong the sinh ra data de cover tat cac test paths.
+=> Giai phap: van sd PSO de sinh test data cho PUT, TUY NHIEN, khong giong nhu 1 paper khac, cach tiep can la chi dinh 1 fitness function ho moi test path. Sau do su dung da luong cua PSO de ....
+
+Phan 2: Dua ra 1 so function tinh fitness va thuat toan toi uu hoa bay dan
+Phan 3: Tong ket cac cong viec lien quan
+Phan 4: Trinh bay cach tiep can de xuat chi tiet
+Phan 5: Chi ra ket qua thuc nghiem va thao luan
+Phan 6: Ket luan paper
+
+PHAN 2: BACKGROUND
+2.1 Fitness function: 
+Khi su dung PSO(Particle Swarm Optimization), 1 test path coverage sinh data test tu dong duoc chuyen toi 1 van de toi uu. De cover 1 test path trong xuot qtrinh thuc thu, chung ta phai tim gia tri phu hop cho cac bien dau vao thoa man cac predicates branch lien quan. Cach thong thuong la su dung 1 branch distance function. Nhu ket qua, viec sinh test data cho branch mong muon la chuyen qua viec tim kiem gtri input dau vao, toi uu gtri tra ve cua Korel function.
+
+FITNESS FUNCTION:
+1. Approach levle
+2. Branch distance
+3. new states reached by a test case
+
+SEARCH BASE SOFTWARE TESTING 
+
+Thanh phan anh huong nhat toi ket qua nghien cuu la fitness function. 
+
+State cua object la 1 nhan to anh huong toi su thuc thi cua method.
+
+2. Unit testing cho OOP
+
+Bao gom 3 buoc:
+	1. Design of test cases
+	2. Thuc thi cac test case do ( sd JUnit)
+	3. Su xac dinh lieu output dua ra co dung hay sai
